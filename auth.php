@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // Run code when form is submitted
     <body>
         <!-- Viedo Background -->
         <video autoplay muted loop id="bgvideo">
-            <source src="/library/site/assets/videos/lines.mp4" type="video/mp4">
+            <source src="lines.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
         <!-- Form with full screen fallback & opacity -->
