@@ -1,0 +1,94 @@
+      #bgvideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            filter: blur(2px);
+        }
+
+        div.background {
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(255,255,255,0.4); /* White w/ opacity */
+        }
+        
+        div.background form {
+            filter: blur(0px);
+            background: white;
+            width: 40%;
+            height: auto;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+            font-family: Boogaloo;
+            transition: 0.4s;
+        }
+
+        div.background .holder {
+            filter: blur(0px);
+            background: white;
+            width: 40%;
+            height: auto;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+            font-family: Boogaloo;
+        }
+        
+        div.background form input[type=password] {
+            background: transparent;
+            color: black;
+            border: none;
+            text-align: center;
+            font-family: arial;
+            padding: 4px;
+            margin: 2%;
+            border-radius: 5px;
+            outline: none;
+            font-size: 25px;
+        }
+
+        div.background form input[type=submit] {
+            background: #0080ff;
+            color: white;
+            border: none;
+            width: 60%;
+            border: none;
+            font-size: 20px;
+            padding: 6px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        div.background .holder button {
+            background: #0080ff;
+            color: white;
+            border: none;
+            width: 60%;
+            border: none;
+            font-size: 20px;
+            padding: 6px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+         @media only screen and (max-width: 900px) {
+            div.background form {
+            width: 90%;
+            }
+        }
