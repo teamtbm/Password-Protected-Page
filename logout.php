@@ -9,6 +9,6 @@ $_SESSION = array();
 session_destroy();
  
 // Redirect to login page
-header("location:https://developer.tbmproduction.com/protected-page/auth");
+header("location:auth.php");
 exit;
 ?>
