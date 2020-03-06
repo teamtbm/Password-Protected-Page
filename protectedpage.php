@@ -27,7 +27,7 @@ if (!isset($_SESSION["authed"]) || $_SESSION["authed"] === false) {
                     <h3 style="font-family: arial;"> Welcome to the password protected page. You can access this page until you click logout or the browser session ends.  </h3>
                 </div>
                 <div class="input-group">
-                    <button onclick="window.location.replace('/protected-page/logout')"> Logout </button>
+                    <button onclick="window.location.replace('logout.php')"> Logout </button>
                 </div>
             </div>
         </div>
