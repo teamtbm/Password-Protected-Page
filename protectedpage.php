@@ -11,6 +11,7 @@ if (!isset($_SESSION["authed"]) || $_SESSION["authed"] === false) {
         <title> Protected Page - TBM Productions </title>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert+One|Boogaloo">
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
         <!-- Viedo Background -->
