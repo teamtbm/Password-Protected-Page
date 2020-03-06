@@ -3,7 +3,7 @@ session_start();
 /* Detect if the $_SESSION variable has already been set 
 (meaning the user has already entered the password during the session) */
 if (isset($_SESSION["authed"]) || $_SESSION["authed"] === true) {
-    header("location:/protected-page");
+    header("location:protectedpage.php");
     exit(307);
 }
 
@@ -12,7 +12,7 @@ $password = "TBMPRODUCTIONS"; // This is where your password goes
 if ($_SERVER["REQUEST_METHOD"] == "POST") { // Run code when form is submitted
     if ($_POST["password"] == $password) {
         $_SESSION["authed"] = true; // Set variable to access on protected page
-        header("location:/protected-page"); // Redirect to protected page
+        header("location:protectedpage.php"); // Redirect to protected page
         exit(307); // Stop all other scripts
     } else {
         $err = "The password you entered was inncorrect.";
@@ -25,6 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // Run code when form is submitted
         <title> Enter Password - TBM Productions </title>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert+One|Boogaloo">
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
         <!-- Viedo Background -->
