@@ -2,7 +2,7 @@
 session_start();
 /* Detect if the $_SESSION variable has already been set 
 (meaning the user has already entered the password during the session) */
-if (isset($_SESSION["authed"]) || $_SESSION["authed"] === true) {
+if (isset($_SESSION["authed"]) && $_SESSION["authed"] === true) {
     header("location:protectedpage.php");
     exit(307);
 }
