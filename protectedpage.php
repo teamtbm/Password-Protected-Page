@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["authed"]) || $_SESSION["authed"] === false) {
-    header("location:/protected-page/auth");
+    header("location:auth.php");
     exit(307);
 }
 ?>
