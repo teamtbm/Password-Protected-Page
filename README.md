@@ -7,4 +7,4 @@ The protectedpage.php is where you hide all the stuff you dont want everyone to 
 If you have the auth.php and the protectedpage.php if different directories, make sure to update the header() in both files to otherwise it will not automatically redirect.
 
 If you have any questions, please contact us via our Discord Server:
-https://discord.tbmproduction.com/
+https://tbmproduction.com/discord
