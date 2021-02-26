@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // Run code when form is submitted
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <!-- Viedo Background -->
+        <!-- Video Background -->
         <video autoplay muted loop id="bgvideo">
             <source src="lines.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
