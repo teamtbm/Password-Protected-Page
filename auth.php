@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL & ~E_NOTICE);
 session_start();
 /* Detect if the $_SESSION variable has already been set 
 (meaning the user has already entered the password during the session) */
